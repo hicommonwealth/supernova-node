@@ -27,7 +27,7 @@ h2 {
     font-style: italic;
     text-transform: uppercase;
     color: rgba(255,255,255,0.6);
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
 }
 hr {
     border-top: none;
@@ -98,6 +98,18 @@ input[type="submit"].disabled {
     opacity: 0.7;
     pointer-events: none;
     user-select: none;
+}
+a.cta-button {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    height: initial;
 }
 
 /*
@@ -188,7 +200,7 @@ input[type="submit"].disabled {
     margin: 20px 0;
 }
 .section.lead .logo-image {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .section.lead .logo-image img {
     width: 96px;
@@ -202,7 +214,7 @@ input[type="submit"].disabled {
     width: 360px;
 }
 .section.lead .item {
-    margin: 26px 0;
+    margin: 27px 0 31px;
 }
 .section.lead h2 {
     text-align: left;
@@ -305,6 +317,7 @@ input[type="submit"].disabled {
 .section.cta {
     text-align: center;
     margin: 90px 0;
+    background: url('/images/dust.svg');
 }
 .section.cta h2 {
     margin-bottom: 30px;
@@ -338,9 +351,6 @@ input[type="submit"].disabled {
     }
     .section.lead {
         margin-top: 10px;
-    }
-    .section.lead .email-updates {
-        margin-right: -60px;
     }
     .section.features .feature-blocks .block {
         float: left;
@@ -385,10 +395,7 @@ input[type="submit"].disabled {
     body {
         font-size: 19px;
     }
-    .email-updates input[type="email"] {
-        width: 100%;
-    }
-    .email-updates input[type="submit"] {
+    .cta-button {
         width: 100%;
         margin-top: 10px;
     }
@@ -402,10 +409,6 @@ input[type="submit"].disabled {
     }
     .section.lead {
         margin: 0;
-    }
-    .section.lead .email-updates {
-        margin-top: -20px;
-        margin-right: 0;
     }
     .section.faq .item {
         width: 100%;
