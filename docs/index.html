@@ -246,9 +246,9 @@
               <p>
                 Any project can choose to allocate a portion of their
                 tokens to a Supernova airdrop or lockdrop, optionally
-                with a vesting schedule. Then, DUST holders can lock
-                their tokens to receive an allocation in the new
-                chain. We'll provide software for verifying the final
+                with a vesting schedule. Then, DUST holders can lock 
+                their tokens to receive an allocation in the new chain.
+                We'll provide software for verifying the final
                 distribution.
               </p>
             </div>
@@ -267,10 +267,13 @@
             <h3 class="i18n">How does Supernova use the Cosmos SDK?</h3>
             <div class="item-body">
               <p>
-                For Supernova to continually seed communities, new
-                chains will continually be added in the future are
-                added as options for creating new locks. To allow for
-                this flexibility, Supernova is built on top of the
+                For new projects (Supernova clients) to seed their 
+                communities, Supernova implements all the requisite 
+                functionalities to do dynamic decentralized airdrops. 
+                For other Cosmos SDK chains, this process for 
+                coordinating with the Supernova chain, itself a Cosmos 
+                SDK chain, is frictionless. To allow for this 
+                flexibility, Supernova is built on top of the
                 Cosmos SDK. By building on top of the SDK, Supernova
                 gets two things&mdash;the ability to connect to other
                 chains via the Cosmos Hub, as well as the ability to
@@ -306,6 +309,19 @@
             </div>
           </div>
           <div class="item">
+            <h3 class="i18n">What is the DUST token supply?</h3>
+            <div class="item-body">
+              <p>
+                50% of the chain will be mined throughout the lifetime 
+                of the chain, following a token supply similar to Bitcoin, 
+                with inflation being halved every 4 years. At launch,
+                30% of the token will be distributed in a lockdrop and an
+                additional 10% to be allocated to each All in 
+                Bits and Commonwealth Labs.
+              </p>
+            </div>
+          </div>
+          <div class="item">
             <h3 class="i18n">How is DUST created?</h3>
             <div class="item-body">
               <p>
@@ -313,10 +329,40 @@
                 allocated to all ETH, BTC, and ATOM lockers. The other
                 50% of DUST will need to be “mined” at a rate of
                 (Bitcoin’s mechanism). Or earned in other manners by
-                participating in the Supernova community.
+                participating in the Supernova community. BTC and ETH 
+                participate by timelocking their token, while ATOM holders
+                are able to also validate while they earn DUST.
               </p>
             </div>
           </div>
+          <div class="item">
+            <h3 class="i18n">Can you explain more about ATOM lock participation?</h3>
+            <div class="item-body">
+              <p>
+                For ATOM lockers to be able to participate in the initial 
+                DUST distribution, they must fulfill some requirements. 
+                First, one must either be bonded as a validator or 
+                delegator for the duration of the six month lock period. 
+                Second, one must submit a bond or delegate transaction 
+                that includes specific script within the includes a 
+                'minimum' lock amount in the memo field. These will be
+                taken into account as the genesis.json.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="item">
+            <h3 class="i18n">Will Edgeware lock participants be able to claim DUST?</h3>
+            <div class="item-body">
+              <p>
+                Yes! For the purpose of the DUST initial distribution, 
+                Edgeware lock participants will be able to claim DUST token.
+                Please note, to do so, they must create a Supernova address
+                and add their specified address to the new DUST lockdrop contract.
+                Note, only Edgeware lockers not signalers will be able to claim 
+                DUST token.
+              </p>
+            </div>
+          </div> -->
           <div class="item">
             <h3 class="i18n">Why become a validator?</h3>
             <div class="item-body">
